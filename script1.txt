@@ -1,0 +1,9 @@
+select disk 0
+select partition 1
+delete partition override
+select disk 0
+create part efi
+select partition 1
+format quick fs=fat32
+assign letter=S
+exit
